@@ -1,0 +1,21 @@
+button
+    border: 0
+    background-color: $drkCyan
+    padding: 0.875rem
+    border-radius: 0.5rem
+    cursor: pointer
+    text-decoration: none
+    display: inline-flex
+    gap: 0.75rem
+    justify-content: center
+    align-items: center
+    transition: 0.3s ease
+    &:hover, &:focus
+        background-color: $drkCyanHover
+
+[data-icon="shopping-cart"]
+    &:before
+        content: ""
+        background-image: url("../../img/icon-cart.svg")
+        width: 15px
+        height: 16px
