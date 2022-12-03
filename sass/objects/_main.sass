@@ -1,0 +1,39 @@
+body
+    background-color: $cream
+    display: grid
+    place-content: center
+    padding: 1rem
+
+    .product
+        background-color: $white
+        border-radius: 0.5rem
+        overflow: hidden
+        display: grid
+        max-width: 578px
+        @media (min-width: 610px)
+            grid-template-columns: 1fr 1fr
+            img
+                height: 100%
+        .content_container
+            padding: 1.5rem
+            display: grid
+            grid-gap: 0.875rem
+            @media (min-width: 610px)
+                padding: 1.875rem
+            .product-category
+                text-transform: uppercase
+                letter-spacing: 6px
+            .price_container
+                display: flex
+                align-items: center
+                gap: 1rem
+                flex-wrap: wrap
+                .current-price
+                    font-family: $fraunces, $serif
+                    font-size: 2rem
+                    color: $drkCyan
+                .old-price
+                    text-decoration: line-through
+
+    footer
+        margin-top: 2rem
